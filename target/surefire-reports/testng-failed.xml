@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [InterNetBanking]" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.NetBanking.Utilities.ExtentReport3"/>
+  </listeners>
+  <test parallel="none" name="Banking Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.NetBanking.TestCases.Tc_AddCustomer_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.NetBanking.TestCases.Tc_AddCustomer_003 -->
+      <class name="com.NetBanking.TestCases.TC_LoginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.NetBanking.TestCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- Banking Test(failed) -->
+</suite> <!-- Failed suite [InterNetBanking] -->
